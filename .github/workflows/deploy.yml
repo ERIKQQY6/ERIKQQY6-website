@@ -18,7 +18,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
-          acess_token: ${{ACTIONS_DEPLOY_KEY}}
+          token: ${{ secrets.ACTIONS_DEPLOY_KEY}}
           repository_name: ERIKQQY6/ERIKQQY6.github.io
           branch: main # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
