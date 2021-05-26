@@ -20,7 +20,7 @@ jobs:
         with:
           git-config-name: ERIKQQY6
           git-config-email: 919261566@qq.com
-          token: ${{ secrets.ACTIONS_DEPLOY_KEY}}
+          ssh-key: ${{ secrets.ACTIONS_DEPLOY_KEY}}
           repository-name: ERIKQQY6/ERIKQQY6.github.io
           branch: main # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
