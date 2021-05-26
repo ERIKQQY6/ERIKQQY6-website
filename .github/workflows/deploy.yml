@@ -44,5 +44,5 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: ERIKQQY6.github.io
+          external_repository: ERIKQQY6/ERIKQQY6.github.io
           publish_dir: ./build
