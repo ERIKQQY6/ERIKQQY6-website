@@ -18,6 +18,8 @@ This command starts a local development server and opens up a browser window. Mo
 
 Using the github action to trigger deploy!!
 
+Just test if the trigger is working fine.
+
 ## Build
 
 ```console
