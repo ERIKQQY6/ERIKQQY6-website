@@ -22,4 +22,4 @@ jobs:
 
       - name: Init Website
         run: |
-          yarn build
+          yarn install && yarn build

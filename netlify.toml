@@ -1,5 +1,5 @@
 [build]
     ignore = "/bin/false"
     base = "./"
-    publish = "build/ERIKQQY6.github.io"
+    publish = "ERIKQQY6/ERIKQQY6.github.io"
     command = "yarn build"
