@@ -9,6 +9,20 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'ERIKQQY6', // Usually your GitHub org/user name.
   projectName: 'ERIKQQY6-website', // Usually your repo name.
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      fr: {
+        label: 'Francais',
+        direction: 'ltr',
+      },
+    },
+  },
   themeConfig: {
     navbar: {
       title: 'My Site',
@@ -28,6 +42,10 @@ module.exports = {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'left',
         },
       ],
     },
