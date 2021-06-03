@@ -45,3 +45,5 @@ This website is using the Crowdin to translate the whole website.
 For more details, please jump to Crowdin official website
 
 The cordwin is not likely working well.
+
+Test commit.
