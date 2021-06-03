@@ -5,7 +5,8 @@ on:
         - main
 jobs:
   build-and-deploy:
-
+    env: 
+      CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
