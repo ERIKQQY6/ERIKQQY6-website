@@ -1,4 +1,4 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
+ /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'ERIKQQY6-website', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    locales: ['en', 'fr', 'zh'],
     localeConfigs: {
       en: {
         label: 'English',
@@ -19,6 +19,10 @@ module.exports = {
       },
       fr: {
         label: 'Francais',
+        direction: 'ltr',
+      },
+      zh: {
+        label: '中文',
         direction: 'ltr',
       },
     },
