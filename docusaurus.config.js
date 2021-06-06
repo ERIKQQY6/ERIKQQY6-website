@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'ERIKQQY6-website', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'fr', 'zh'],
+    locales: ['en', 'fr', 'zh-CN'],
     localeConfigs: {
       en: {
         label: 'English',
@@ -19,10 +19,6 @@ module.exports = {
       },
       fr: {
         label: 'Francais',
-        direction: 'ltr',
-      },
-      zh: {
-        label: '中文',
         direction: 'ltr',
       },
     },
