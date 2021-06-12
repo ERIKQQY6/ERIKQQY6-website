@@ -22,6 +22,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
           ssh-key: ${{ secrets.DEPLOY_KEY}}
-          repository-name: ERIKQQY/ERIKQQY6-website
+          repository-name: ERIKQQY6/ERIKQQY6-website
           branch: main # The deploy branch.
           folder: build # The deploy folder.
