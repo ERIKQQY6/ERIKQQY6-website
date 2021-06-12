@@ -1,51 +1,33 @@
- /** @type {import('@docusaurus/types').DocusaurusConfig} */
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://erikqqy6.github.io/ERIKQQY6-website/',
+  title: 'Casnode',
+  tagline: 'Official site of casnode',
+  url: 'https://casnode.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'ERIKQQY6', // Usually your GitHub org/user name.
-  projectName: 'ERIKQQY6-website', // Usually your repo name.
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr', 'zh-CN'],
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-      },
-      fr: {
-        label: 'Francais',
-        direction: 'ltr',
-      },
-    },
-  },
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Casnode',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/casbin.svg',
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Docs',
           position: 'left',
-          label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/casbin/casnode',
           label: 'GitHub',
           position: 'right',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'left',
         },
       ],
     },
@@ -56,8 +38,8 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Getting Started',
+              to: 'docs/',
             },
           ],
         },
@@ -65,16 +47,20 @@ module.exports = {
           title: 'Community',
           items: [
             {
+              label: 'Casbin Website',
+              href: 'https://casbin.org/',
+            },
+            {
+              label: 'Casbin Forum',
+              href: 'https://forum.casbin.com/',
+            },
+            {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/search?q=casbin',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Chat on Gitter',
+              href: 'https://gitter.im/casbin/Lobby',
             },
           ],
         },
@@ -82,17 +68,13 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/casbin/casnode',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Casbin contributors.`,
     },
   },
   presets: [
@@ -101,15 +83,9 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
