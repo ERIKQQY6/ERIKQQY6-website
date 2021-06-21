@@ -7,8 +7,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Casnode', // Usually your GitHub org/user name.
-  projectName: 'Casnode-website', // Usually your repo name.
+  organizationName: 'ERIKQQY6', // Usually your GitHub org/user name.
+  projectName: 'ERIKQQY6-website', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'zh', 'fr', 'de', 'ru', 'jp', 'ko']
