@@ -79,6 +79,25 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/casbin/casnode',
             },
+            {
+              html:`
+              <head>
+              <script>
+              var _hmt = _hmt || [];
+              </script>
+              </head>
+              <body>
+              <script type="text/javascript">
+              (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?3afd414918db784168090ec9eecc64ba";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+                    })();
+              </script>
+              </body>
+              `
+            }
           ],
         },
       ],
