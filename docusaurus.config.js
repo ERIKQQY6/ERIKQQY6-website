@@ -104,9 +104,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Casbin contributors.`,
     },
   },
-  plugins: [
-    'plugins/baiduAnalytics',
-   ],
   presets: [
     [
       '@docusaurus/preset-classic',
