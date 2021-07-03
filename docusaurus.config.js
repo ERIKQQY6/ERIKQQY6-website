@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'ERIKQQY6-website', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh', 'fr', 'de', 'ru', 'jp']
+    locales: ['en', 'zh', 'fr', 'de', 'ru', 'ja']
   },
   themeConfig: {
     navbar: {
