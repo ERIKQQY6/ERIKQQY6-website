@@ -36,6 +36,13 @@ module.exports = {
         {
           type: 'localeDropdown',
           position: 'right',
+          dropdownItemsBefore: [],
+          dropdownItemsAfter: [
+            {
+              to: 'https://crowdin.com/project/erikqqy6-website',
+              label: 'Help us translate',
+            },
+          ],
         },
       ],
     },
