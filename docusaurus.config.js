@@ -15,6 +15,10 @@ module.exports = {
   },
   plugins: [ '@docusaurus/plugin-google-analytics'],
   themeConfig: {
+      googleAnalytics: {
+      trackingID: 'G-FY8D6DN1Z6',
+      anonymizeIP: true,
+  },
     navbar: {
       title: 'Casnode',
       logo: {
@@ -110,10 +114,7 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Casbin contributors.`,
-          googleAnalytics: {
-      trackingID: 'G-FY8D6DN1Z6',
-      anonymizeIP: true,
-  },
+
     },
 
   presets: [
