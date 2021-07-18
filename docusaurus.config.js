@@ -13,6 +13,7 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'zh', 'fr', 'de', 'ru', 'ja']
   },
+  plugins: [ '@docusaurus/plugin-google-analytics'],
   themeConfig: {
     navbar: {
       title: 'Casnode',
@@ -110,6 +111,9 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Casbin contributors.`,
     },
+    googleAnalytics: {
+      trackingID: 'G-FY8D6DN1Z6',
+      anonymizeIP: true,
   },
   presets: [
     [
