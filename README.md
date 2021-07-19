@@ -80,7 +80,7 @@ Casnode uses XORM to connect to DB, so all DBs supported by XORM can also be use
   
   //If you set a custom domain name in ali-oss bucket, please fill in.
   export const OSSCustomDomain = ""
-   ```
+  ```
 
   Information in app.conf.
   You could get your roleArn in https://ram.console.aliyun.com/roles.
