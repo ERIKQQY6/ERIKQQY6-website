@@ -139,3 +139,5 @@ export const GithubRepo = "https://github.com/casbin/casnode" //your github repo
 ```
 
 This is casnode website using for test the docusaurus website generator, please see more at docusaurus official website~
+
+Noting that the License is under Apache License 2.0, please importantly remember that.
