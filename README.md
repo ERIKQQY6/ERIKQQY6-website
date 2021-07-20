@@ -143,3 +143,5 @@ yarn run crowdin download
 ## License
 
 Casdoor is [Apache licensed](./LICENSE).
+
+This is a test repo
