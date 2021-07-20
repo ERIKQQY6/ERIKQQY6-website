@@ -14,7 +14,7 @@ module.exports = {
     googleAnalytics: {
     trackingID: 'G-FY8D6DN1Z6',
       anonymizeIP: true,
-    }
+    },
     navbar: {
       title: 'Casdoor',
       logo: {
