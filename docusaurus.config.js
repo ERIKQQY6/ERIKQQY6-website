@@ -9,10 +9,6 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'ERIKQQY6', // Usually your GitHub org/user name.
   projectName: 'ERIKQQY6-website', // Usually your repo name.
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh', 'fr', 'de', 'ru', 'ja']
-  },
   plugins: [ '@docusaurus/plugin-google-analytics'],
   themeConfig: {
       googleAnalytics: {
@@ -37,17 +33,6 @@ module.exports = {
           href: 'https://github.com/casbin/casnode',
           label: 'GitHub',
           position: 'right',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-          dropdownItemsBefore: [],
-          dropdownItemsAfter: [
-            {
-              to: 'https://crowdin.com/project/erikqqy6-website',
-              label: 'Help us translate',
-            },
-          ],
         },
       ],
     },
