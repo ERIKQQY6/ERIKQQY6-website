@@ -10,7 +10,7 @@ module.exports = {
   organizationName: 'casdoor', // Usually your GitHub org/user name.
   projectName: 'casdoor-website', // Usually your repo name.
   themeConfig: {
-    googleAnalytics: {
+    gtag: {
     trackingID: 'G-FY8D6DN1Z6',
       anonymizeIP: true,
     },
