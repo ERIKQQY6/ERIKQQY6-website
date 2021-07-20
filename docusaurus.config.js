@@ -9,7 +9,6 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'casdoor', // Usually your GitHub org/user name.
   projectName: 'casdoor-website', // Usually your repo name.
-  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
     googleAnalytics: {
     trackingID: 'G-FY8D6DN1Z6',
