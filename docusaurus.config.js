@@ -1,38 +1,54 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Casnode',
-  tagline: 'Official site of casnode',
-  url: 'https://casnode.org',
+  title: 'Casdoor',
+  tagline: 'A UI-first centralized authentication / Single-Sign-On (SSO) platform based on OAuth 2.0 / OIDC',
+  url: 'https://ERIKQQY6.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'ERIKQQY6', // Usually your GitHub org/user name.
-  projectName: 'ERIKQQY6-website', // Usually your repo name.
-  plugins: [ '@docusaurus/plugin-google-analytics'],
+  favicon: 'img/favicon.png',
+  organizationName: 'casdoor', // Usually your GitHub org/user name.
+  projectName: 'casdoor-website', // Usually your repo name.
   themeConfig: {
-      googleAnalytics: {
-      trackingID: 'G-FY8D6DN1Z6',
-      anonymizeIP: true,
-  },
     navbar: {
-      title: 'Casnode',
+      title: 'Casdoor',
       logo: {
         alt: 'My Site Logo',
         src: 'img/casbin.svg',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
+          type: 'doc',
+          docId: 'overview',
+          position: 'left',
           label: 'Docs',
+        },
+        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://door.casbin.com/swagger/',
+          label: 'API',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/casbin/casnode',
-          label: 'GitHub',
+          href: 'https://oa.casbin.com/',
+          label: 'OA',
+          position: 'left',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
+          dropdownItemsAfter: [
+            {
+              to: 'https://crowdin.com/project/casdoor',
+              label: 'Help translate',
+            },
+          ],
+        },
+        {
+          href: 'https://github.com/casbin/casdoor',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -43,8 +59,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Getting Started',
-              to: 'docs/',
+              label: 'Overview',
+              to: '/docs/overview',
+            },
+            {
+              label: 'Get Started',
+              to: '/docs/basic/installation'
+            },
+            {
+              label: 'Casdoor API',
+              href: 'https://door.casbin.com/swagger/'
             },
           ],
         },
@@ -52,20 +76,20 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Casbin Website',
-              href: 'https://casbin.org/',
-            },
-            {
-              label: 'Casbin Forum',
-              href: 'https://forum.casbin.com/',
+              label: 'Casbin',
+              href: 'https://casbin.org/'
             },
             {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/search?q=casbin',
             },
             {
-              label: 'Chat on Gitter',
-              href: 'https://gitter.im/casbin/Lobby',
+              label: 'Gitter',
+              href: 'https://gitter.im/casbin/Lobby'
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/casbinHQ',
             },
           ],
         },
@@ -73,44 +97,44 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/casbin/casnode',
+              label: 'Blog',
+              to: '/blog',
             },
             {
-               html: `
-              <head>
-              <script>
-              var _hmt = _hmt || [];
-              </script>
-              </head>
-              <body>
-              <script type="text/javascript">
-              (function() {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?3afd414918db784168090ec9eecc64ba";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-                })();
-                </script>
-                </body>
+              label: 'GitHub',
+              href: 'https://github.com/casbin/casdoor',
+            },
+            {
+              html: `
+              <iframe src="https://ghbtns.com/github-btn.html?user=casbin&repo=casdoor&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub">Casdoor</iframe>
               `
             },
           ],
         },
       ],
+      logo: {
+        alt: 'Casbin Logo',
+        src: 'img/casbin_min.svg',
+        href: 'https://casbin.org/',
+      },
       copyright: `Copyright © ${new Date().getFullYear()} Casbin contributors.`,
-
     },
-
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/casdoor/casdoor-website/tree/master/',
         },
         blog: {
           showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/casdoor/casdoor-website/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -118,5 +142,4 @@ module.exports = {
       },
     ],
   ],
-  }
 };
