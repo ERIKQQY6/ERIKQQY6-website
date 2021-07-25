@@ -11,8 +11,9 @@ module.exports = {
   projectName: 'casdoor-website', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: 'c7ed5894be2aada47e44b54850eb5a3c',
+      apiKey: '5619c3d97cc0f99f03d7b6f5185d2f35',
       indexName: 'casdoortest',
+      applicationId: 'R4QH4JSOL1',
     },
     gtag: {
     trackingID: 'G-FY8D6DN1Z6',
