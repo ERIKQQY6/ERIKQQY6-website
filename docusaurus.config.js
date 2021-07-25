@@ -10,6 +10,10 @@ module.exports = {
   organizationName: 'casdoor', // Usually your GitHub org/user name.
   projectName: 'casdoor-website', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: '078ac8dbed060101181341c7eba00610',
+      indexName: 'qqynode',
+    },
     gtag: {
     trackingID: 'G-FY8D6DN1Z6',
       anonymizeIP: true,
