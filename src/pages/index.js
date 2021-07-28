@@ -15,12 +15,12 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary"
+            className="button button--secondary button--lg"
             to="/docs/overview">
             Get Started
           </Link>
           <Link
-            className="button button--secondary"
+            className="button button--secondary button--lg"
             style={{marginTop: "2rem"}}
             to="https://door.casbin.com/">
             Online Demo
