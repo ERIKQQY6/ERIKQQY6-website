@@ -12,7 +12,8 @@ module.exports = {
   themeConfig: {
     algolia: {
       apiKey: '41c481c691018c863b01f07f568163d0',
-      indexName: 'casdoor',
+      indexName: 'CASDOOR',
+      contextualSearch: true,
     },
     gtag: {
     trackingID: 'G-FY8D6DN1Z6',
