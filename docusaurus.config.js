@@ -13,7 +13,6 @@ module.exports = {
     algolia: {
       apiKey: '9dd05a71b33137015f44a15dec078082',
       indexName: 'casdoortest',
-      applicationId: 'R4QH4JSOL1',
     },
     gtag: {
     trackingID: 'G-FY8D6DN1Z6',
