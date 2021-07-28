@@ -21,6 +21,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
+            style={{marginTop: "2rem"}}
             to="https://door.casbin.com/">
             Online Demo
           </Link>
