@@ -41,7 +41,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-                <script src="https://opencollective.com/casbin/banner.js" />
+                <script src="https://opencollective.com/casbin/banner.js"></script>
       </main>
     </Layout>
   );
