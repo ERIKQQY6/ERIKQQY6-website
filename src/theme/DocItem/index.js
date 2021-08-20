@@ -102,7 +102,8 @@ function DocItem(props) {
                 </footer>
               )}
             </article>
-    <DiscussionEmbed
+            <DocPaginator metadata={metadata} />
+                  <DiscussionEmbed
     shortname='erikqqy'
     config={
         {
@@ -110,7 +111,6 @@ function DocItem(props) {
         }
       }
       />
-            <DocPaginator metadata={metadata} />
           </div>
         </div>
         {!hideTableOfContents && DocContent.toc && (
