@@ -41,8 +41,13 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-                <script src="https://opencollective.com/casbin/banner.js" />
-      </main>
+        <select>
+        <option value="grapefruit">葡萄柚</option>
+        <option value="lime">酸橙</option>
+        <option value="coconut">椰子</option>
+        <option value="mango">芒果</option>
+        </select>
+        </main>
     </Layout>
   );
 }

@@ -158,4 +158,7 @@ module.exports = {
       },
     ],
   ],
+  scripts :[
+    'https://github.com/ErikQQY/scripts/blob/master/select.js',
+  ],
 };
